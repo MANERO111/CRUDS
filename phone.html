@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cruds</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="cruds">CRUDS</h1>
+        <h2 style="color: white;">CREATE READ UPDATE DELETE SEARCH</h2>
+        <input type="text" name="" placeholder="title" id="title">
+        <div class="total">
+            <input type="text" name="" placeholder="Price" id="price">
+            <input type="text" name="" placeholder="taxes" id="taxes">
+            <input type="text" name="" placeholder="ads" id="ads">
+            <input type="text" name="" placeholder="discount" id="discount">
+            <div class="t"><button id="total">total : <p id="t"></p></button></div>
+        </div>
+        <input type="text" name="" placeholder="count" id="count">
+        <input type="text" name="" placeholder="categorie" id="categorie">
+        <button onclick="create()" id="create">create</button>
+        <button onclick="upd()" class="hide" id="upd">update</button>
+        <input type="text" name="" placeholder="search" id="search">
+        <div class="searchoption" >
+            <button id="sebytit">Search By title</button>
+            <button id="sebycat">Search By Category</button>
+        </div>
+        <button id="delall" onclick="deleteall()">Delete All</button>
+        <table >
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+        </table>
+        <table id="tab">
+
+        </table>
+    </div>
+    <script src="cru.js"></script>
+</body>
+</html>
